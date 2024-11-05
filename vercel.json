@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Nayan/catalogs/Nayana.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/Nayan/catalogs/Nayana.js"
+    }
+  ],
+  "env": {
+    "MY_ENV_VARIABLE": "value"
+  }
+}
